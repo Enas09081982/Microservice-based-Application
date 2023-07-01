@@ -1,1 +1,127 @@
 
+JavaScript
+
+One of must popular language , 
+Jobs:
+Front-end Developer
+Back-end Developer
+Full-stack Developer
+
+can used in browser, 
+by using it we can build :
+Web/mobile App ,
+Real-time Networking Apps
+Command Line Tool
+Games
+
+The code is run in browser, where every browser has java script engine that can execute java script code .
+In FireFox the JavaScript engin is (SpiderMonkey)
+In Chrome the JavaScript engin is (v8) 
+In Explorer the JavaScript engin is (Chakra)
+
+JavaScript can be run in browser or Node ( V8 embedded in c++)
+So Node is A runtime environment for executing javaScript code and it asynchronous by default where each thread can deal with multi request . And it just use with data intensive and real time applications
+not cpu intensive
+
+ECMAScript vs JavaScript
+
+ECMAScript is just specification and responsible to define standards while the other is language
+
+Write your first JavaScript code:
+Open Chrome browser, right_click --→Aspect--→console---→console.log(‘hellowold’);
+
+Setting up JavaScript Environment:
+VS code
+OR Sublime Text
+OR Atom
+And we need Node to set up some of lib we need later.
+
+We will use VS code: 
+Make New Folder and Open it with VS code . 
+Create New index.html
+type ! Then press Tab, that will generate basic form of html
+Go to install live server from extension then restart VS Code , after open go to index.html right click --→ open with live server 
+
+Type between <body></body> 
+h1 then press TAB 
+<h1>Hello World!</h1> 
+then open again from live server you will see your changes 
+it’s better to put JavaScript code before the end of body section 
+
+
+
+<javascript>
+console.log(‘HEllo World!’);
+</javascript>
+
+
+OR create another file and called it index.js
+
+then inside <javascript src=’index.js’>
+
+now we can create our variable like :
+
+let name=’inas’;
+
+or let name={
+
+myName:’inas’,
+age:41
+};
+
+console.log(name);
+
+
+If we have a list of color that a user maybe use it or a list of product then we have to use array :: 
+let selectedColor = [‘red’,’blue’];
+console.log(selectedColor);
+
+console.log(selectedColor);
+console.log(selectedColor.length);
+
+
+Functions::
+
+function greeting(name){  // parameter
+console.log('hello'+name)
+}
+
+greeting('Inas');// Argument
+
+
+
+function square(num){
+return num*num;
+}
+
+console.log(square(5));
+***************************************
+Node:::::
+
+To execute javascript code:
+
+we open terminal and type: 
+node javascript_file
+
+Node module system 
+
+Loading a Module in javascript 
+
+index.js:
+
+
+function log(messages){
+console.log(messages);
+}
+module.exports.log = log;
+
+
+
+
+add.js::
+
+const logg = require('./index');
+
+logg.log(‘message’);
+ 
+
